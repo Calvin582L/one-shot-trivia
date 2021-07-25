@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.banner{
+  background-color: #393E46;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content
+{
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h1
+{
+  font-size: 2.8em;
+  color: #EDf5E1;
+}
+
+.banner .content h1 strong
+{
+  font-size: 1.4em;
+  color: #00ADB5;
+}
+
+.banner .content h2
+{
+  font-size: 1.5em;
+  color: #EDf5E1;
+}
+
+
+.banner .content h2 strong
+{
+  font-size: 1.5em;
+  color: #00ADB5;
+}
+
+.banner .content h3
+{
+  font-size: 1.5em;
+  color: #EDf5E1;
+}
+
+.banner .content button
+{
+  font-size: 1.5em;
+  color: #EDf5E1;
+  border: none;
+  background: #00ADB5;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+#timer
+{
+  font-size: 1.8em;
+  color: #EDf5E1;
+}
+
+#timer strong
+{
+  font-size: 1.1em;
+  color: #FF3633;
+}
+
+#question
+{
+  font-size: 2em;
+  color: #EDf5E1;
+}
+
+#correct{
+  font-size: 2em;
+  color: #00FF00;
+}
+
+#incorrect{
+   font-size: 2em;
+  color: #FF3633;
+}
+
+#correctanswer{
+  font-size: 2em;
+  color: #EDf5E1;
+}
+
+#correctanswer strong{
+  font-size: 1em;
+  color: #00FF00;
+}
+
+#highscore{
+  font-size: 2em;
+  color: #EDf5E1;
+}
+
+#highscore strong{
+  font-size: 1em;
+  color: #00ADB5;
+}
+
+#points{
+  font-size: 2em;
+  color: #EDf5E1;
+}
+
+#points strong{
+  font-size: 1em;
+  color: #00ADB5;
+}
+
+.banner .content button:hover
+{
+  letter-spacing: 6px;
+}
