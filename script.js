@@ -1,7 +1,4 @@
 const api_url = "https://opentdb.com/api.php?amount=1";
-if (localStorage.getItem("highscore") == "null"){
-  localStorage.setItem("highscore", 0);
-}
 document.getElementById("highscore").innerHTML = "Current High Score: " + "<strong>" + localStorage.getItem("highscore")+"</strong>";  
 
 let points = 0;
@@ -66,6 +63,9 @@ function endgame(gameover){
   if (points > localStorage.getItem("highscore")){
     localStorage.setItem("highscore", points);
     document.getElementById("highscore").innerHTML = "*NEW* High Score: " + "<strong>" + localStorage.getItem("highscore")+"</strong>"; 
+  }
+  else if(localStorage.getItem("highscore") == null){
+    localStorage.setItem("highscore", 0);
   }
   else{
     document.getElementById("highscore").innerHTML = "High Score: " + "<strong>" + localStorage.getItem("highscore")+"</strong>";  
