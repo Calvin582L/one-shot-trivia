@@ -93,13 +93,18 @@
 }
 
 #incorrect{
-   font-size: 2em;
+  font-size: 2em;
   color: #FF3633;
 }
 
 #correctanswer{
   font-size: 2em;
   color: #EDf5E1;
+}
+
+#timesup{
+  font-size: 2em;
+  color: #FF3633;
 }
 
 #correctanswer strong{
