@@ -1,4 +1,7 @@
 const api_url = "https://opentdb.com/api.php?amount=1";
+if (localStorage.getItem("highscore") == "null"){
+  localStorage.setItem("highscore", 0);
+}
 document.getElementById("highscore").innerHTML = "Current High Score: " + "<strong>" + localStorage.getItem("highscore")+"</strong>";  
 
 let points = 0;
@@ -29,7 +32,7 @@ function endgame(gameover){
   document.getElementById("answer_3").disabled = true;
   document.getElementById("answer_4").disabled = true;
   if (gameover=="Timesup"){
-    document.getElementById("game").innerHTML = "<strong>Times up! Gameover.</strong>";
+    document.getElementById("game").innerHTML = "<strong id='timesup'>Times up! Gameover.</strong>";
   }
   else if(gameover=="Incorrect"){
   if (document.getElementById("answer_1").textContent == correct_answer){
@@ -187,8 +190,6 @@ document.getElementById("play").onclick = async function play(){
       endgame("Timesup");
     }
   }, 1000);
-
-  console.log(correct_answer);
 
   document.getElementById("answer_1").onclick = function(){
     if (document.getElementById("answer_1").textContent == correct_answer){
