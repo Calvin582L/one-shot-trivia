@@ -1,4 +1,4 @@
-const api_url = "https://opentdb.com/api.php?amount=1";
+const api_url = "https://opentdb.com/api.php?amount=1&difficulty=easy";
 if(localStorage.getItem("highscore") == null){
     localStorage.setItem("highscore", 0);
   }
