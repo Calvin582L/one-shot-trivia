@@ -136,3 +136,12 @@
 {
   letter-spacing: 6px;
 }
+
+@media (max-width: 991px){
+
+  *{
+  background-color: #393E46;
+  width: 800px;
+  margin: 0 auto;
+}
+}
